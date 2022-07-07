@@ -1,0 +1,13 @@
+var estudiantes = ["Maria", "Sergio", "Rosa", "Daniel"];
+
+function saludarEstudiantes(estudiantes){
+    console.log(`Hola, ${estudiantes}`);
+}
+//Metodo 1, a lo clasico
+for(var i = 0; i < estudiantes.length; i++){
+    saludarEstudiantes(estudiantes[i]);
+}
+//Metodo 2, para cada elemento del array, haz esto
+for (var estudiante of estudiantes){
+    saludarEstudiantes(estudiante);
+}
